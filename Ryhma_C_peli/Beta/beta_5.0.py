@@ -1,5 +1,5 @@
 import random
-from Ryhma_C_peli_final.Beta.Story import story
+from Ryhma_C_peli.Beta.Story import story
 from geopy import distance
 from flask import Flask, render_template
 
@@ -12,6 +12,7 @@ conn = mysql.connector.connect(
     user='root',
     password='exel80jajop',
     autocommit=True
+
 
 )
 
