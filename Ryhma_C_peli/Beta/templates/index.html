@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lentopeli</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="container">
+    <header class="page-header">
+        <h1 class="page-title">
+            Lentopeli!
+        </h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../templates/index.html">Game</a>
+                </li>
+                <li>
+                    <a href="../templates/about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13079660.953667184!2d20.83818244853614!3d55.53258632410206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1701951727520!5m2!1sfi!2sfi"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="boxes">
+            <section class="box">
+                <header>
+                    <h2>Game status</h2>
+                </header>
+                <table>
+                    <tr>
+                        <td colspan="2">Player name:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Location:</td>
+                    </tr>
+                    <tr>
+                        <td>C Temperature: <span id="temprature">0</span>C above average</td>
+                        <td>C Left: <span id="left">6</span>C</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="box">
+
+            </section>
+            <section class="box">
+                <header>
+                    <h2>Goal</h2>
+                </header>
+                <ul id="goal">
+                    <li>
+                        <figure>
+                            <img src="">
+                            <figcaption>Capture the villain!</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+
+</div>
+</body>
+</html>
