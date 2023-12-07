@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>lentopeli</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" defer></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js" defer></script>
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik&display=swap" rel="stylesheet">
+    <title>lentopeli</title>
 </head>
 
 
@@ -72,11 +78,22 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="page-footer">
         <p>This game was made by Eljas, Janne, Idriz and Sampo ©</p>
     </footer>
-
-
+    <div class="goal">
+        <h2>You got the villain!</h2>
+        <p>
+            <span id="goal-txt">Goal reached!</span>
+        </p>
+    </div>
 </div>
+
+<div id="player-modal">
+    <form id="player-form"></form>
+        <input type="text" placeholder="Player name" required>
+        <input type="submit" value="Start game">
+</div>
+
 </body>
 </html>
