@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik&display=swap" rel="stylesheet">
-    <title>lentopeli</title>
+    <title>Lentopeli</title>
 </head>
 
 
@@ -25,12 +25,12 @@
         </h1>
 
         <nav>
-            <ul>
+            <ul class="flex-wrap space-evenly">
                 <li>
-                    <a href="../templates/index.html">Game</a>
+                    <a class="button button-white" href="../templates/index.html">Game</a>
                 </li>
                 <li>
-                    <a href="../templates/about.html">About</a>
+                    <a class="button button-white" href="../templates/about.html">About</a>
                 </li>
             </ul>
         </nav>
@@ -38,7 +38,8 @@
 
     <main>
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13079660.953667184!2d20.83818244853614!3d55.53258632410206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1701951727520!5m2!1sfi!2sfi"
+            <iframe class="responsive-img"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13079660.953667184!2d20.83818244853614!3d55.53258632410206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1701951727520!5m2!1sfi!2sfi"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -61,13 +62,10 @@
                 </table>
             </section>
             <section class="box">
-
-            </section>
-            <section class="box">
                 <header>
                     <h2>Goal</h2>
                 </header>
-                <ul id="goal">
+                <ul id="goal" class="flex-wrap">
                     <li>
                         <figure>
                             <img src="">
@@ -91,8 +89,8 @@
 
 <div id="player-modal">
     <form id="player-form"></form>
-        <input type="text" placeholder="Player name" required>
-        <input type="submit" value="Start game">
+    <input type="text" placeholder="Player name" required>
+    <input type="submit" value="Start game">
 </div>
 
 </body>
